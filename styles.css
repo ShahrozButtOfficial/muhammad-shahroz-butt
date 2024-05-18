@@ -1,0 +1,445 @@
+/* styles.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Body styles */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #ddd;
+    background-color: #111;
+}
+
+/* Link styles */
+a {
+    color: #4caf50;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #8bc34a;
+}
+
+/* Header styles */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 2rem;
+    background-color: #222;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+header .logo img {
+    height: 4rem;
+}
+
+header .nav-toggle {
+    display: none;
+}
+
+header .nav-links {
+    float: right;
+}
+
+header .nav-links ul {
+    display: flex;
+    list-style: none;
+}
+
+header .nav-links li {
+    margin: 0 1rem;
+}
+
+header .nav-links li a {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header .nav-links li a:hover {
+    background-color: #333;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.header-title {
+    flex-grow: 1;
+    text-align: center;
+    margin: 0;
+    font-size: 1.5rem; /* Adjust font size as needed */
+    color: #fff; /* Adjust text color as needed */
+    font-weight: bold; /* Adjust font weight as needed */
+}
+
+/* Section styles */
+.section {
+    padding: 8rem 2rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Profile picture styles */
+.profile-container {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    text-align: center; /* Center the text inside the typing text container */
+}
+
+.profile {
+    margin-right: 20px; /* Adjust margin as needed */
+}
+
+.profile-pic {
+    width: 200px;
+    border-radius: 50%;
+    border: 3px solid #4caf50;
+}
+
+.typing-text-container {
+    flex-grow: 1;
+    font-size: 24px; /* Adjust font size as needed */
+    font-weight: bold; /* Make the font stronger */
+}
+
+.about-text {
+    flex-grow: 2; /* Allow the about text container to grow and fill available space */
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* About section styles */
+.about-text {
+    line-height: 1.5;
+}
+
+.about-text h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Grid styles */
+.skills-grid,
+.languages-grid,
+.interests-grid,
+.hobbies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 2rem;
+}
+
+.skill,
+.language,
+.interest,
+.hobby {
+    background-color: #333;
+    padding: 1rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+}
+
+.skill:hover,
+.language:hover,
+.interest:hover,
+.hobby:hover {
+    transform: translateY(-5px);
+}
+
+/* Project styles */
+.project {
+    background-color: #333;
+    padding: 1rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-top: 2rem;
+    transition: transform 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+/* Contact styles */
+.contact-info {
+    margin-top: 2rem;
+}
+
+.contact-info p {
+    margin-bottom: 1rem;
+}
+
+.profiles {
+    list-style: none;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.profiles li {
+    margin: 0 1rem;
+}
+
+form {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+}
+
+form label {
+    grid-column: 1 / 3;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    background-color: #444;
+    border: none;
+    padding: 0.5rem;
+    color: #ddd;
+    border-radius: 5px;
+    resize: none; /* Prevent resizing */
+}
+
+form textarea {
+    height: 10rem;
+}
+
+form button {
+    grid-column: 1 / 3;
+    margin-top: 1rem;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.logo {
+    width: 120px; /* Adjust width as needed */
+    height: 90px; /* Adjust height as needed */
+    animation: pulseLogo 2s ease-in-out infinite; /* Add pulsating animation */
+}
+
+@keyframes pulseLogo {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+/* Underline effect for headings */
+h1::after,
+h2::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #4caf50; /* Change color as needed */
+    margin-top: 0.5rem;
+    transition: width 0.3s ease-in-out; /* Add a transition for smooth animation */
+}
+
+/* Hover effect for headings */
+h1:hover::after,
+h2:hover::after {
+    width: 100%; /* Expand the underline on hover */
+}
+
+form button:hover {
+    transform: translateY(-5px);
+}
+
+/* Footer styles */
+footer {
+    padding: 1rem 0;
+    background-color: #222;
+    text-align: center;
+}
+
+footer p {
+    color: #ddd;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    header {
+        padding: 1rem;
+    }
+
+    header .logo img {
+        height: 2rem;
+    }
+
+    header .nav-toggle {
+        display: block;
+        float: right;
+        cursor: pointer;
+    }
+
+    header .nav-toggle span {
+        display: block;
+        width: 2rem;
+        height: 3px;
+        margin: 0.5rem auto;
+        background-color: #ddd;
+        transition: transform 0.3s;
+    }
+
+    header .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        padding: 1rem;
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(-10px);
+        transition: opacity 0.3s, transform 0.3s;
+    }
+
+    header .nav-links ul {
+        flex-direction: column;
+    }
+
+    header .nav-links li {
+        margin: 1rem 0;
+    }
+
+    header.nav-active .nav-links {
+        display: block;
+        opacity: 1;
+        pointer-events: all;
+        transform: translateY(0);
+    }
+
+    header.nav-active .nav-toggle span:nth-child(1) {
+        transform: rotate(45deg);
+    }
+
+    header.nav-active .nav-toggle span:nth-child(2) {
+        opacity: 0;
+    }
+
+    header.nav-active .nav-toggle span:nth-child(3) {
+        transform: rotate(-45deg);
+    }
+
+    .section {
+        padding: 4rem 2rem;
+    }
+
+    .profile-pic {
+        width: 150px;
+    }
+}
+
+.error-dialog {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.error-content {
+    background-color: #333;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
+    color: #ddd;
+    text-align: center;
+}
+
+.close {
+    color: #ddd;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #ccc;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Breadcrumb styling */
+.breadcrumb {
+    background-color: #f5f5f5;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    justify-content: center;
+}
+
+.breadcrumb ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.breadcrumb li {
+    margin-right: 0.5rem;
+}
+
+.breadcrumb li a {
+    color: #4caf50;
+    text-decoration: none;
+}
+
+.breadcrumb li::after {
+    content: ">";
+    margin-left: 0.5rem;
+}
+
+.breadcrumb li:last-child::after {
+    content: "";
+    margin: 0;
+}
+

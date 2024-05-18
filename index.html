@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Shahroz Butt | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/logo_transparent.png" type="image/png">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="logo_transparent.png" alt="Logo">
+            </div>
+            <h1 class="header-title">Muhammad Shahroz Butt's Portfolio</h1>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav-links" id="nav-links">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+ <!-- Breadcrumbs -->
+ <nav class="breadcrumb">
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li>Current Page</li>
+    </ul>
+</nav>
+
+    <section id="about" class="section">
+        <div class="container">
+            <div class="profile-container">
+                <div class="profile">
+                    <img src="IMG_0757.jpg" alt="Profile Picture" class="profile-pic">
+                </div>
+                <div class="typing-text-container">
+                    <p class="typing-text"></p>
+                </div>
+            </div>
+            <div class="about-text">
+                <h1>Muhammad Shahroz Butt</h1>
+                <p>Enthusiastic coder and problem solver with a passion for innovation and creativity. Currently pursuing a Bachelor’s Degree in Computer Science, specializing in C++ programming.</p>
+                <p>I thrive in challenging environments and enjoy collaborating with teams to deliver high-quality solutions. Always eager to learn and explore new technologies to stay ahead in the rapidly evolving tech landscape.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill">C++ Programming</div>
+                <div class="skill">Problem-solving</div>
+                <div class="skill">Data Structures & Algorithms</div>
+                <div class="skill">Teamwork & Collaboration</div>
+                <div class="skill">Communication Skills</div>
+                <div class="skill">Continuous Learning</div>
+                <div class="skill">Attention to Detail</div>
+            </div>
+            <h2>Languages</h2>
+            <div class="languages-grid">
+                <div class="language">
+                    <strong>Urdu:</strong> Native language
+                </div>
+                <div class="language">
+                    <strong>English:</strong> Intermediate (B1)
+                </div>
+            </div>
+            <h2>Interests</h2>
+            <div class="interests-grid">
+                <div class="interest">C++</div>
+                <div class="interest">HTML</div>
+                <div class="interest">CSS</div>
+                <div class="interest">Team Management</div>
+            </div>
+            <h2>Hobbies</h2>
+            <div class="hobbies-grid">
+                <div class="hobby">
+                    <h3>Coding</h3>
+                    <p>Enthusiastic about coding as both a profession and a hobby, continuously exploring new programming languages, tools, and technologies to broaden technical expertise.</p>
+                </div>
+                <div class="hobby">
+                    <h3>Playing Cricket</h3>
+                    <p>Active member of the university cricket team, demonstrating teamwork, leadership, and sportsmanship on and off the field. Regularly participate in local cricket tournaments, fostering camaraderie and competitive spirit while honing strategic thinking and decision-making abilities.</p>
+                </div>
+                <div class="hobby">
+                    <h3>Playing Snooker</h3>
+                    <p>Relax by playing snooker during leisure time, enjoying the strategic thinking and precision required to excel in the game. Regularly engage in friendly matches with friends and peers, promoting social interaction and healthy competition.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project">
+                    <h3>Project One</h3>
+                    <p>Description of the first project.</p>
+                </div>
+                <div class="project">
+                    <h3>Project Two</h3>
+                    <p>Description of the second project.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <p><strong>Address:</strong> Lahore, Punjab, 54810 PK</p>
+                <p><strong>Phone:</strong> 03194785543</p>
+                <p><strong>Email:</strong> bshahroz48@gmail.com</p>
+            </div>
+            <h2>Websites, Portfolios, Profiles</h2>
+            <ul class="profiles">
+                <li><a href="https://www.linkedin.com/in/muhammad-shahroz-butt-4aa093309/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/ShahrozButtOfficial" target="_blank">GitHub</a></li>
+                <li><a href="https://www.instagram.com/shahroz_butt_official/" target="_blank">Instagram</a></li>
+                <li><a href="https://www.facebook.com/shahroz.butt.7146" target="_blank">Facebook</a></li>
+            </ul>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+    <div class="error-dialog" id="error-dialog">
+        <div class="error-content">
+            <span class="close" onclick="closeErrorDialog()">&times;</span>
+            <h2>Error</h2>
+            <p id="error-message">An unexpected error occurred. Please try again later.</p>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Muhammad Shahroz Butt</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
